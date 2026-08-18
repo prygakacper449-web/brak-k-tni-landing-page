@@ -124,6 +124,24 @@ const faq = [
   },
 ];
 
+const reviews: { name: string; initial: string; quote: string }[] = [
+  {
+    name: "Franek",
+    initial: "F",
+    quote: "„Super ebooki, nie żałuję zakupu.”",
+  },
+  {
+    name: "Alicja",
+    initial: "A",
+    quote: "„Super, szybko i przyjemnie się czyta i mega dużo wiedzy.”",
+  },
+  {
+    name: "Majka",
+    initial: "M",
+    quote: "„Przestałam być popychadłem i wszystko dobrze wytłumaczone.”",
+  },
+];
+
 const navLinks = [
   { href: "#ebooki", label: "Ebooki" },
   { href: "#zestaw", label: "Zestaw" },

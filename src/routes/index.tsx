@@ -124,6 +124,24 @@ const faq = [
   },
 ];
 
+const reviews: { name: string; initial: string; quote: string }[] = [
+  {
+    name: "Franek",
+    initial: "F",
+    quote: "„Super ebooki, nie żałuję zakupu.”",
+  },
+  {
+    name: "Alicja",
+    initial: "A",
+    quote: "„Super, szybko i przyjemnie się czyta i mega dużo wiedzy.”",
+  },
+  {
+    name: "Majka",
+    initial: "M",
+    quote: "„Przestałam być popychadłem i wszystko dobrze wytłumaczone.”",
+  },
+];
+
 const navLinks = [
   { href: "#ebooki", label: "Ebooki" },
   { href: "#zestaw", label: "Zestaw" },
@@ -396,10 +414,9 @@ function Index() {
               Opinie czytelniczek
             </h2>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
-              {[1, 2, 3].map((n) => (
-                /* PLACEHOLDER - podmienić na prawdziwą opinię przed publikacją */
+              {reviews.map((r) => (
                 <figure
-                  key={n}
+                  key={r.name}
                   className="flex h-full flex-col rounded-3xl border border-border bg-card p-7 shadow-soft"
                 >
                   <div className="flex gap-1 text-gold">
@@ -408,15 +425,13 @@ function Index() {
                     ))}
                   </div>
                   <blockquote className="mt-5 flex-1 text-[0.98rem] leading-relaxed text-foreground/85">
-                    „[Miejsce na opinię — wklej prawdziwy cytat klientki]”
+                    {r.quote}
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-3">
                     <span className="grid size-11 place-items-center rounded-full bg-secondary font-display text-base font-semibold text-primary">
-                      A
+                      {r.initial}
                     </span>
-                    <span className="text-sm font-medium text-primary">
-                      [Imię, Nazwisko lub inicjał]
-                    </span>
+                    <span className="text-sm font-medium text-primary">{r.name}</span>
                   </figcaption>
                 </figure>
               ))}

@@ -1,9 +1,13 @@
-name: Build Automatically
+name: Static Web Export → gh-pages
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-deploy:
@@ -19,13 +23,27 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci || npm install
 
-      - name: Build the project
-        run: npm run build
+      - name: Build static export
+        run: npm run build:static
 
-      - name: Deploy to GitHub Pages
+      - name: Verify output structure
+        run: |
+          test -f dist-static/index.html
+          test -d dist-static/assets
+          test -f dist-static/.nojekyll
+          test -f dist-static/favicon.ico
+          test -f dist-static/og-image.png
+          test -f dist-static/placeholder.svg
+          test -f dist-static/robots.txt
+          ls -la dist-static
+
+      - name: Deploy build output to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_branch: gh-pages
+          publish_dir: ./dist-static
+          force_orphan: true
+          enable_jekyll: false

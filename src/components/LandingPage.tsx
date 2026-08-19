@@ -201,19 +201,19 @@ export default function LandingPage() {
 
             <div className="grid grid-cols-3 items-end gap-3 sm:gap-5">
               <img
-                src={coverGranice.url}
+                src={coverGranice}
                 alt="Zdrowe Granice, Zdrowe Relacje — Jak Mówić „Nie” Bez Poczucia Winy"
                 className="cover-img mt-8"
                 loading="eager"
               />
               <img
-                src={coverTrudna.url}
+                src={coverTrudna}
                 alt="Trudna Rozmowa Bez Dramatu — 7 Kroków, Które Zamieniają Konflikt w Porozumienie"
                 className="cover-img"
                 loading="eager"
               />
               <img
-                src={coverMilczenie.url}
+                src={coverMilczenie}
                 alt="Od Milczenia do Bliskości — Jak Rozmawiać z Partnerem, Żeby Was Zbliżało, a Nie Dzieliło"
                 className="cover-img mt-8"
                 loading="eager"

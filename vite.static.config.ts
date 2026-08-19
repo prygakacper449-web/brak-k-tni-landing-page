@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import tsConfigPaths from "vite-tsconfig-paths";
 import { resolve } from "node:path";
 
 // Static Web Export: buduje w pełni statyczną stronę (index.html w roocie,
@@ -10,7 +9,10 @@ export default defineConfig({
   base: "./",
   root: resolve(process.cwd(), "static"),
   publicDir: resolve(process.cwd(), "public"),
-  plugins: [react(), tailwindcss(), tsConfigPaths({ root: process.cwd() })],
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: { "@": resolve(process.cwd(), "src") },
+  },
   build: {
     outDir: resolve(process.cwd(), "dist-static"),
     emptyOutDir: true,

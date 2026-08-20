@@ -197,7 +197,7 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
           <a href="#top" className="font-display text-lg font-semibold tracking-tight">
-            Brak <span className="text-accent">Kłótni</span>
+            Lepsze <span className="text-accent">Relacje</span>
           </a>
           <ul className="hidden items-center gap-7 text-sm text-muted-foreground sm:flex">
             {navLinks.map((l) => (
@@ -333,7 +333,7 @@ export default function LandingPage() {
                 <div className="flex items-center gap-2">
                   <span className="text-lg" aria-hidden="true">👍</span>
                   <span className="font-display text-lg font-semibold text-primary">
-                    Z ebookami Brak Kłótni
+                    Z ebookami Lepsze Relacje
                   </span>
                 </div>
                 <div className="mt-3 h-2 w-full rounded-full bg-secondary">
@@ -627,7 +627,7 @@ export default function LandingPage() {
 
       <footer className="border-t border-border bg-card px-5 py-12">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 text-center">
-          <p className="font-display text-lg font-semibold text-primary">Brak Kłótni</p>
+          <p className="font-display text-lg font-semibold text-primary">Lepsze Relacje</p>
           <p className="max-w-xl text-sm text-muted-foreground">
             Ebooki dostępne w formacie PDF, sprzedaż i płatność obsługiwana przez Naffy.io
           </p>
@@ -640,7 +640,7 @@ export default function LandingPage() {
             </a>
           </div>
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Brak Kłótni. Wszelkie prawa zastrzeżone.
+            © {new Date().getFullYear()} Lepsze Relacje. Wszelkie prawa zastrzeżone.
           </p>
         </div>
       </footer>

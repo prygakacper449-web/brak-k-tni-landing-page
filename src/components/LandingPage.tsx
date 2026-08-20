@@ -640,7 +640,7 @@ export default function LandingPage() {
             </a>
           </div>
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Brak Kłótni. Wszelkie prawa zastrzeżone.
+            © {new Date().getFullYear()} Lepsze Relacje. Wszelkie prawa zastrzeżone.
           </p>
         </div>
       </footer>

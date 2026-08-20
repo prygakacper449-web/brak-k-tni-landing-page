@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
         content:
           "5 poradników PDF o trudnych rozmowach: z partnerem, w pracy, z dzieckiem i o granicach. Pojedynczo 34,99 zł lub zestaw 5 w 1 za 119,99 zł.",
       },
-      { property: "og:title", content: "Brak Kłótni — ebooki o rozmowach, które zbliżają" },
+      { property: "og:title", content: "Lepsze Relacje — ebooki o rozmowach, które zbliżają" },
       {
         property: "og:description",
         content:

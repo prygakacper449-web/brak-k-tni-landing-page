@@ -6,14 +6,16 @@ import {
 } from "@/components/ui/accordion";
 import {
   Repeat,
-  HandHeart,
-  Briefcase,
+  Heart,
   MessageSquareOff,
-  MoonStar,
+  BatteryLow,
+  Clock,
+  Brain,
   ShieldCheck,
   Zap,
   Users,
   Star,
+  Check,
 } from "lucide-react";
 
 import coverMilczenie from "@/assets/covers/cover-milczenie.webp";
@@ -63,11 +65,58 @@ const ebooks = [
 ];
 
 const pains = [
-  { icon: Repeat, text: "Kłócicie się o to samo w kółko i nic się nie zmienia" },
-  { icon: HandHeart, text: "Boisz się powiedzieć „nie”, bo czujesz się winna" },
-  { icon: Briefcase, text: "W pracy trudno Ci postawić się szefowi albo koledze" },
-  { icon: MessageSquareOff, text: "Dziecko przestało Ci się zwierzać" },
-  { icon: MoonStar, text: "Rozmowa z partnerem kończy się milczeniem, nie zrozumieniem" },
+  {
+    icon: MessageSquareOff,
+    title: "Brak konkretnych słów w emocjach",
+    desc: "Wiesz, co czujesz, ale w środku kłótni nie wiesz, co powiedzieć.",
+  },
+  {
+    icon: Repeat,
+    title: "Nawyk milczenia zamiast rozmowy",
+    desc: "Łatwiej się wycofać, niż zmierzyć z niewygodnym tematem.",
+  },
+  {
+    icon: BatteryLow,
+    title: "Strach przed odmową",
+    desc: "Boisz się powiedzieć „nie”, więc gromadzisz żal, który i tak w końcu wybucha.",
+  },
+  {
+    icon: Clock,
+    title: "Powtarzalne wzorce z przeszłości",
+    desc: "Reagujesz tak, jak nauczyłaś się reagować dawno temu, nie tak, jak chcesz teraz.",
+  },
+  {
+    icon: Brain,
+    title: "Niewidzialne schematy w relacji",
+    desc: "To rzadko jedna kłótnia. To powtarzający się mechanizm, którego nie widać z bliska.",
+  },
+];
+
+const benefits = [
+  {
+    title: "Gotowe zdania na trudne rozmowy",
+    desc: "Dokładne sformułowania, których użyjesz zamiast szukać słów w emocjach.",
+  },
+  {
+    title: "Granice bez poczucia winy",
+    desc: "Nauczysz się mówić „nie”, nie tłumacząc się i nie przepraszając za siebie.",
+  },
+  {
+    title: "Koniec kłótni, które nic nie zmieniają",
+    desc: "Poznasz, jak kończyć konflikt tak, żeby nie wracał następnego dnia.",
+  },
+  {
+    title: "Bliskość zamiast milczenia",
+    desc: "Konkretne kroki, jak wrócić do rozmowy po długiej ciszy w związku.",
+  },
+  {
+    title: "System, nie przypadek",
+    desc: "Każdy ebook to gotowa struktura pracy nad jedną konkretną relacją — bez zgadywania.",
+  },
+  {
+    title: "Do zastosowania od razu",
+    desc: "Konkretne zdania i ćwiczenia, które wdrażasz tego samego wieczoru, nie za miesiąc.",
+  },
 ];
 
 const faq = [
@@ -225,25 +274,122 @@ export default function LandingPage() {
         {/* BÓL */}
         <section className="mx-auto max-w-6xl px-5 py-20">
           <h2 className="text-center font-display text-3xl font-semibold text-primary sm:text-4xl">
-            Czy to brzmi znajomo?
+            Dlaczego wciąż wracacie do tej samej kłótni?
           </h2>
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {pains.map(({ icon: Icon, text }) => (
+          <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground sm:text-lg">
+            To rzadko kwestia złej woli. Najczęściej problem leży głębiej.
+          </p>
+          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {pains.map(({ icon: Icon, title, desc }) => (
               <li
-                key={text}
-                className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-soft"
+                key={title}
+                className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-soft"
               >
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-accent">
+                <span className="grid size-12 shrink-0 place-items-center rounded-full bg-accent/15 text-accent">
                   <Icon className="size-5" aria-hidden="true" />
                 </span>
-                <p className="text-[0.98rem] leading-relaxed text-foreground/85">{text}</p>
+                <h3 className="mt-4 font-display text-base font-semibold text-primary">
+                  {title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{desc}</p>
               </li>
             ))}
           </ul>
-          <p className="mx-auto mt-12 max-w-2xl text-center font-display text-xl leading-relaxed text-primary">
-            Każdy z tych ebooków rozwiązuje jeden konkretny problem — wybierz swój albo weź
-            wszystkie i miej komplet narzędzi.
+          <p className="mx-auto mt-12 max-w-2xl text-center font-display text-lg italic leading-relaxed text-primary">
+            Większość par i rodzin próbuje naprawić pojedynczą kłótnię — zamiast
+            zmienić wzorzec, który ją wywołuje.
           </p>
+        </section>
+
+        {/* CO DA CI TA SERIA */}
+        <section className="mx-auto max-w-6xl px-5 py-20">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
+            <div className="rounded-3xl border border-border bg-card p-6 shadow-soft sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
+                ● Twoja zmiana
+              </p>
+              <div className="mt-6">
+                <div className="flex items-center gap-2">
+                  <span className="text-lg" aria-hidden="true">😓</span>
+                  <span className="font-display text-lg font-semibold text-muted-foreground">
+                    Samodzielnie
+                  </span>
+                </div>
+                <div className="mt-3 h-2 w-full rounded-full bg-secondary">
+                  <div
+                    className="h-2 rounded-full bg-muted-foreground/40"
+                    style={{ width: "20%" }}
+                  />
+                </div>
+                <p className="mt-3 text-sm font-medium text-muted-foreground">
+                  Miesiące, może lata
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground/80">
+                  Powtarzasz te same kłótnie, znowu milczysz, znowu się tłumaczysz
+                </p>
+              </div>
+              <hr className="my-6 border-border" />
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-lg" aria-hidden="true">👍</span>
+                  <span className="font-display text-lg font-semibold text-primary">
+                    Z ebookami Brak Kłótni
+                  </span>
+                </div>
+                <div className="mt-3 h-2 w-full rounded-full bg-secondary">
+                  <div
+                    className="h-2 rounded-full bg-accent"
+                    style={{ width: "85%" }}
+                  />
+                </div>
+                <p className="mt-3 text-sm font-semibold text-primary">
+                  Już od pierwszej rozmowy
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-foreground/80">
+                  Konkretne słowa → od razu do użycia → widoczna różnica
+                </p>
+              </div>
+              <div className="mt-6 rounded-2xl bg-accent/10 p-5">
+                <p className="text-xs font-bold uppercase tracking-wider text-accent">
+                  Różnica
+                </p>
+                <p className="mt-2 font-display text-base font-semibold text-primary">
+                  Konkretne słowa zamiast domysłów
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-foreground/80">
+                  Gotowe zdania i schematy rozmów, które możesz użyć tego samego
+                  dnia.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="font-display text-3xl font-semibold text-primary sm:text-4xl">
+                Co da Ci ta seria ebooków?
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                To nie kolejna dawka ogólnych porad o »lepszej komunikacji«. To
+                pięć konkretnych przewodników, które pokazują dokładnie, co
+                powiedzieć i jak to powiedzieć — krok po kroku.
+              </p>
+              <ul className="mt-7 space-y-5">
+                {benefits.map((b) => (
+                  <li key={b.title} className="flex items-start gap-3">
+                    <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-accent text-accent-foreground">
+                      <Check className="size-3.5" aria-hidden="true" />
+                    </span>
+                    <div>
+                      <p className="font-display text-base font-semibold text-primary">
+                        {b.title}
+                      </p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                        {b.desc}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* EBOOKI */}

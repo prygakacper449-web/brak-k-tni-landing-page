@@ -627,7 +627,7 @@ export default function LandingPage() {
 
       <footer className="border-t border-border bg-card px-5 py-12">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 text-center">
-          <p className="font-display text-lg font-semibold text-primary">Brak Kłótni</p>
+          <p className="font-display text-lg font-semibold text-primary">Lepsze Relacje</p>
           <p className="max-w-xl text-sm text-muted-foreground">
             Ebooki dostępne w formacie PDF, sprzedaż i płatność obsługiwana przez Naffy.io
           </p>

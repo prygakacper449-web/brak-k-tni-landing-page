@@ -392,6 +392,87 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* WIARYGODNOŚĆ / METODA */}
+        <section className="bg-muted/40 py-20">
+          <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-2 lg:items-center">
+            <div className="order-1 flex justify-center lg:order-none">
+              <div className="relative grid size-64 place-items-center rounded-full bg-gradient-to-b from-accent/10 to-primary/5 shadow-soft sm:size-80">
+                <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-accent/20" />
+                <span className="pointer-events-none absolute -inset-6 rounded-full bg-accent/5 blur-2xl" />
+                <svg
+                  viewBox="0 0 240 200"
+                  className="relative size-44 sm:size-56"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  {/* lewa sylwetka */}
+                  <circle cx="74" cy="58" r="22" stroke="oklch(0.29 0.09 268)" strokeWidth="3" />
+                  <path
+                    d="M40 150c0-24 15-44 34-44s34 20 34 44"
+                    stroke="oklch(0.29 0.09 268)"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
+                  <path d="M60 150h28" stroke="oklch(0.29 0.09 268)" strokeWidth="3" strokeLinecap="round" />
+                  {/* prawa sylwetka */}
+                  <circle cx="166" cy="58" r="22" stroke="oklch(0.82 0.11 80)" strokeWidth="3" />
+                  <path
+                    d="M132 150c0-24 15-44 34-44s34 20 34 44"
+                    stroke="oklch(0.82 0.11 80)"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
+                  <path d="M152 150h28" stroke="oklch(0.82 0.11 80)" strokeWidth="3" strokeLinecap="round" />
+                  {/* serce między nimi */}
+                  <path
+                    d="M120 96c-4-7-18-6-18 4 0 8 18 18 18 18s18-10 18-18c0-10-14-11-18-4z"
+                    stroke="oklch(0.72 0.15 25)"
+                    strokeWidth="3"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="order-2 lg:order-none">
+              <h2 className="font-display text-3xl font-semibold text-primary sm:text-4xl">
+                Ebooki oparte na sprawdzonych zasadach komunikacji
+              </h2>
+              <p className="mt-3 font-display text-lg font-medium text-accent">
+                To nie są ogólne porady z internetu. To konkretne, przetestowane techniki.
+              </p>
+              <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+                <p>
+                  Każdy z pięciu ebooków powstał w oparciu o sprawdzone zasady komunikacji i
+                  psychologii relacji — asertywność, komunikację bez oceniania, budowanie
+                  bliskości i zaufania.
+                </p>
+                <p>
+                  Zamiast pisać kolejny zbiór ogólników, skupiłam się na tym, jak ludzie naprawdę
+                  się kłócą, milczą i unikają trudnych tematów — i co realnie pomaga to zmienić,
+                  a nie tylko brzmi dobrze w teorii.
+                </p>
+                <p>
+                  Każdy ebook to gotowe, konkretne narzędzia — zdania, ćwiczenia i schematy rozmów
+                  — które możesz zastosować tego samego dnia, a nie kolejna dawka motywacji bez planu
+                  działania.
+                </p>
+              </div>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <span className="rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-medium text-primary">
+                  📚 5 ebooków, jeden spójny system
+                </span>
+                <span className="rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-medium text-primary">
+                  ✓ Konkretne narzędzia, nie ogólniki
+                </span>
+                {/* PLACEHOLDER — podmień, gdy będziesz mieć realne liczby, np. '250+ czytelniczek' albo 'X sprzedanych ebooków' */}
+                <span className="rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary">
+                  Dołącz do pierwszych czytelniczek
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* EBOOKI */}
         <section id="ebooki" className="scroll-mt-20 bg-muted/60 py-20">
           <div className="mx-auto max-w-6xl px-5">

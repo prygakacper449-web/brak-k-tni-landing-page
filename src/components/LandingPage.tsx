@@ -333,7 +333,7 @@ export default function LandingPage() {
                 <div className="flex items-center gap-2">
                   <span className="text-lg" aria-hidden="true">👍</span>
                   <span className="font-display text-lg font-semibold text-primary">
-                    Z ebookami Brak Kłótni
+                    Z ebookami Lepsze Relacje
                   </span>
                 </div>
                 <div className="mt-3 h-2 w-full rounded-full bg-secondary">

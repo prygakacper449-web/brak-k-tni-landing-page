@@ -5,7 +5,7 @@ import LandingPage from "@/components/LandingPage";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Brak Kłótni — ebooki o rozmowach, które zbliżają" },
+      { title: "Lepsze Relacje — ebooki o rozmowach, które zbliżają" },
       {
         name: "description",
         content:

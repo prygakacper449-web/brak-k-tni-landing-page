@@ -6,14 +6,16 @@ import {
 } from "@/components/ui/accordion";
 import {
   Repeat,
-  HandHeart,
-  Briefcase,
+  Heart,
   MessageSquareOff,
-  MoonStar,
+  BatteryLow,
+  Clock,
+  Brain,
   ShieldCheck,
   Zap,
   Users,
   Star,
+  Check,
 } from "lucide-react";
 
 import coverMilczenie from "@/assets/covers/cover-milczenie.webp";

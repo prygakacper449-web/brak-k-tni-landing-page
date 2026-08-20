@@ -65,11 +65,58 @@ const ebooks = [
 ];
 
 const pains = [
-  { icon: Repeat, text: "Kłócicie się o to samo w kółko i nic się nie zmienia" },
-  { icon: HandHeart, text: "Boisz się powiedzieć „nie”, bo czujesz się winna" },
-  { icon: Briefcase, text: "W pracy trudno Ci postawić się szefowi albo koledze" },
-  { icon: MessageSquareOff, text: "Dziecko przestało Ci się zwierzać" },
-  { icon: MoonStar, text: "Rozmowa z partnerem kończy się milczeniem, nie zrozumieniem" },
+  {
+    icon: MessageSquareOff,
+    title: "Brak konkretnych słów w emocjach",
+    desc: "Wiesz, co czujesz, ale w środku kłótni nie wiesz, co powiedzieć.",
+  },
+  {
+    icon: Repeat,
+    title: "Nawyk milczenia zamiast rozmowy",
+    desc: "Łatwiej się wycofać, niż zmierzyć z niewygodnym tematem.",
+  },
+  {
+    icon: BatteryLow,
+    title: "Strach przed odmową",
+    desc: "Boisz się powiedzieć „nie”, więc gromadzisz żal, który i tak w końcu wybucha.",
+  },
+  {
+    icon: Clock,
+    title: "Powtarzalne wzorce z przeszłości",
+    desc: "Reagujesz tak, jak nauczyłaś się reagować dawno temu, nie tak, jak chcesz teraz.",
+  },
+  {
+    icon: Brain,
+    title: "Niewidzialne schematy w relacji",
+    desc: "To rzadko jedna kłótnia. To powtarzający się mechanizm, którego nie widać z bliska.",
+  },
+];
+
+const benefits = [
+  {
+    title: "Gotowe zdania na trudne rozmowy",
+    desc: "Dokładne sformułowania, których użyjesz zamiast szukać słów w emocjach.",
+  },
+  {
+    title: "Granice bez poczucia winy",
+    desc: "Nauczysz się mówić „nie”, nie tłumacząc się i nie przepraszając za siebie.",
+  },
+  {
+    title: "Koniec kłótni, które nic nie zmieniają",
+    desc: "Poznasz, jak kończyć konflikt tak, żeby nie wracał następnego dnia.",
+  },
+  {
+    title: "Bliskość zamiast milczenia",
+    desc: "Konkretne kroki, jak wrócić do rozmowy po długiej ciszy w związku.",
+  },
+  {
+    title: "System, nie przypadek",
+    desc: "Każdy ebook to gotowa struktura pracy nad jedną konkretną relacją — bez zgadywania.",
+  },
+  {
+    title: "Do zastosowania od razu",
+    desc: "Konkretne zdania i ćwiczenia, które wdrażasz tego samego wieczoru, nie za miesiąc.",
+  },
 ];
 
 const faq = [

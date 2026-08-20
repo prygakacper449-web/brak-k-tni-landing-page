@@ -197,7 +197,7 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
           <a href="#top" className="font-display text-lg font-semibold tracking-tight">
-            Brak <span className="text-accent">Kłótni</span>
+            Lepsze <span className="text-accent">Relacje</span>
           </a>
           <ul className="hidden items-center gap-7 text-sm text-muted-foreground sm:flex">
             {navLinks.map((l) => (

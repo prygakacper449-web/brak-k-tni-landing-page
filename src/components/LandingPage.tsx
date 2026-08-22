@@ -173,6 +173,7 @@ const reviews: { name: string; initial: string; quote: string }[] = [
 ];
 
 const navLinks = [
+  { href: "#darmowy-poradnik", label: "Darmowy poradnik" },
   { href: "#ebooki", label: "Ebooki" },
   { href: "#zestaw", label: "Zestaw" },
   { href: "#opinie", label: "Opinie" },

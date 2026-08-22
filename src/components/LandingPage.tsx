@@ -276,6 +276,73 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* DARMOWY PORADNIK */}
+        <section id="darmowy-poradnik" className="scroll-mt-20 bg-accent/10 py-20">
+          <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-16">
+            <div className="mx-auto flex max-w-xs justify-center">
+              <img
+                src={DARMOWY_COVER}
+                alt="Pierwsza Pomoc w Trudnej Rozmowie — darmowy ebook"
+                className="aspect-[3/4] w-full rounded-2xl object-contain shadow-lift transition-transform duration-300 hover:scale-[1.02]"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <span className="inline-flex rounded-full bg-accent px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-accent-foreground">
+                Darmowy ebook · 18 stron
+              </span>
+              <h2 className="mt-5 font-display text-3xl font-semibold text-primary sm:text-4xl">
+                Pierwsza Pomoc w Trudnej Rozmowie
+              </h2>
+              <p className="mt-3 font-display text-lg font-medium text-accent">
+                10 zdań, które możesz powiedzieć, zanim wybuchniesz albo zamilkniesz
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                Zanim zdecydujesz się na pełne ebooki, zobacz, jak konkretnie potrafię
+                pomagać. Ten krótki poradnik to pierwsza pomoc na najtrudniejszy moment —
+                wystarczy 5 minut lektury i od razu masz coś do użycia.
+              </p>
+              <ul className="mt-6 space-y-3">
+                <li className="flex items-start gap-3 text-sm text-foreground">
+                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-accent text-accent-foreground">
+                    <Check className="size-3" aria-hidden="true" />
+                  </span>
+                  10 gotowych zdań na chwilę napięcia — bez teorii, od razu do powiedzenia
+                </li>
+                <li className="flex items-start gap-3 text-sm text-foreground">
+                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-accent text-accent-foreground">
+                    <Check className="size-3" aria-hidden="true" />
+                  </span>
+                  Schemat „zatrzymaj — zapytaj — powiedz” na każdą trudną rozmowę
+                </li>
+                <li className="flex items-start gap-3 text-sm text-foreground">
+                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-accent text-accent-foreground">
+                    <Check className="size-3" aria-hidden="true" />
+                  </span>
+                  Przykłady z życia, które rozpoznasz od razu
+                </li>
+                <li className="flex items-start gap-3 text-sm text-foreground">
+                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-accent text-accent-foreground">
+                    <Check className="size-3" aria-hidden="true" />
+                  </span>
+                  Format PDF — czytasz na telefonie, tablecie lub komputerze
+                </li>
+              </ul>
+              <a
+                href={DARMOWY_PDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5 sm:w-auto"
+              >
+                Pobierz za darmo (PDF) →
+              </a>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Bez zapisywania się do niczego — plik PDF od razu do pobrania.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* BÓL */}
         <section className="mx-auto max-w-6xl px-5 py-20">
           <h2 className="text-center font-display text-3xl font-semibold text-primary sm:text-4xl">

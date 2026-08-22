@@ -329,7 +329,7 @@ export default function LandingPage() {
                 </li>
               </ul>
               <a
-                href={DARMOWY_PDF}
+                href="https://drive.google.com/file/d/13aO1d95QparyQVi6ZDtqXtVKbObdSJ5o/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5 sm:w-auto"

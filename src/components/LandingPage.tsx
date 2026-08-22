@@ -23,8 +23,12 @@ import coverTrudna from "@/assets/covers/cover-trudna.webp";
 import coverGranice from "@/assets/covers/cover-granice.webp";
 import coverPraca from "@/assets/covers/cover-praca.webp";
 import coverDziecko from "@/assets/covers/cover-dziecko.webp";
+import coverDarmowyAsset from "@/assets/covers/cover-darmowy.png.asset.json";
+import darmowyPdfAsset from "@/assets/downloads/pierwsza-pomoc-w-trudnej-rozmowie.pdf.asset.json";
 
 const BUNDLE_URL = "https://www.naffy.io/brakklotni/zestaw-ebookow-41-gratis-4rn";
+const DARMOWY_COVER = coverDarmowyAsset.url;
+const DARMOWY_PDF = darmowyPdfAsset.url;
 
 const ebooks = [
   {
